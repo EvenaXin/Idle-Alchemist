@@ -1,0 +1,84 @@
+Let's make a game!
+	name:Alchemical Clicker
+	by:Evena May Xin
+	desc:This is an alchemical clicker/idle game.
+	created:17/12/2020
+	updated:17/12/2020
+	version:0.01
+
+Settings
+	background:https://new-cdn.80.lv/upload/content/12/5d2872665b532.gif
+	building cost increase:115%
+	building cost refund:50%
+	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
+	stylesheet:stuff/bigBlue.css
+
+Layout
+	use default
+
+Buttons
+	*mana
+		name:Gather Mana
+		desc:Begin gathering mana!
+		class:bigButton
+		no text
+		on click:
+			anim icon wobble
+			$rand=random(3)
+			if ($rand=0)yield 1 fireMana
+			if ($rand=1)yield 1 waterMana
+			if ($rand=2)yield 1 earthMana
+			if ($rand=3)yield 1 airMana
+		end
+
+	*RESOURCES
+		name:RESOURCES
+		desc: SHOW/HIDE your resources.
+
+Buildings
+	*Flame
+		name:Flame
+		desc:A forever burning flame which produces small amounts of mana.
+		on tick:yield 0.01 fireMana
+		no buy
+
+Resources
+	*Amount
+		name:Amount
+		desc:The amount you wish to use.
+		can be negative
+		on click:
+			$Amt=Amount
+			if ($Amt=1) Amount=1
+			if ($Amt=10) Amount=10
+			if ($Amt=100) Amount=-1
+			if ($Amt=-1) Amount=1
+		end
+
+	*fireMana
+		name:Fire Mana
+		desc:This is fire mana. Fire mana is useful for a large number of things, however have caution as it is extremely volatile in large quantities!
+		on click:
+			Flame=this+Flame
+			lose this
+		end
+		on tick:
+			if (random(fireMana)>random(waterMana/2,waterMana))
+				fireMana=fireMana*0.8
+				waterMana=waterMana*0.8
+				earthMana=earthMana*0.8
+				airMana=airMana*0.8
+			end
+		end
+
+	*waterMana
+		name:Water Mana
+		desc:This is water mana. Water mana can be used to keep fire under control!
+
+	*earthMana
+		name:Earth Mana
+		desc:This is earth mana. Earth mana is extremely simple, however many of the branches of it can be dangerous!
+
+	*airMana
+		name:Air Mana
+		desc:This is air mana. Air mana is great to have, however it's hard to keep contained!
