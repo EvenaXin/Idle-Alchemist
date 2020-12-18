@@ -8,6 +8,14 @@ Let's make a game!
 
 Settings
 	background:https://new-cdn.80.lv/upload/content/12/5d2872665b532.gif
+		on click:
+			anim icon wobble
+			$rand=random(3)
+			if ($rand=0)yield 1 fireMana
+			if ($rand=1)yield 1 waterMana
+			if ($rand=2)yield 1 earthMana
+			if ($rand=3)yield 1 airMana
+		end
 	building cost increase:115%
 	building cost refund:50%
 	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
