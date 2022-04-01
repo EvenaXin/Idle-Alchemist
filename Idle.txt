@@ -1,4 +1,4 @@
-/*test*/Let's make a game!
+Let's make a game!
 	name:Alchemical Clicker
 	by:Evena May Xin
 	desc:This is an alchemical clicker/idle game.
