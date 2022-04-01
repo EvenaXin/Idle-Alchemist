@@ -37,6 +37,7 @@ Buttons
 			if ($rand=1)yield 1 waterMana
 			if ($rand=2)yield 1 earthMana
 			if ($rand=3)yield 1 airMana
+		end
 
 	*RESOURCES
 		name:RESOURCES
