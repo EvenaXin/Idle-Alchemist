@@ -83,7 +83,7 @@ Resources
 		end
 	*earthMana
 		name:Earth Mana
-		desc:This is earth mana. Earth mana is extremely durable, however is very difficult to get in large quantities!
+		desc:This is earth mana. Earth mana is extremely durable, however due to it being more tangible, it is more difficult to get in large quantities!
 	*airMana
 		name:Air Mana
 		desc:This is air mana. Air mana is great to have, however it's hard to keep contained!
@@ -109,10 +109,10 @@ Upgrades
 	*balanceAlchemist
 		name:Balance Alchemist
 		desc:Little bit of everything
+		cost:24 fireMana, 24 waterMana, 24 earthMana, 24 airMana
 		passive:
 			multiply yield of fireMana by 1.4
 			multiply yield of waterMana by 1.4
 			multiply yield of earthMana by 1.4
 			multiply yield of airMana by 1.4
 		end
-		cost:24 fireMana,24 waterMana,24 earthMana,24 airMana
