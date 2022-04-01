@@ -63,8 +63,9 @@ Buildings
 	*Stone
 		name:Stone
 		desc:A jagged cracked stone which produces small amounts of earth mana.
+		cost increase:180
 		on tick:yield 0.1 earthMana
-		cost:2 earthMana
+		cost:4 earthMana
 	*Breeze
 		name:Breeze
 		desc:A small breeze which always blows, producing small amounts of air mana.
@@ -83,7 +84,7 @@ Resources
 		end
 	*fireMana
 		name:Fire Mana
-		desc:This is fire mana. Fire mana is useful for a large number of things, however have caution as it is extremely volatile in large quantities!
+		desc:This is fire mana. Fire mana is great for protecting yourself, however it doesn't respond well to water mana!
 		on click:lose this
 		on tick:
 			if (random(fireMana)<random(waterMana))
@@ -92,7 +93,7 @@ Resources
 		end
 	*waterMana
 		name:Water Mana
-		desc:This is water mana. Water mana can be used to keep fire under control!
+		desc:This is water mana. Water mana is one of the building blocks of life, however it doesn't respond well to fire mana!
 		on tick:
 			if (random(waterMana)<random(fireMana))
 				waterMana=waterMana * 0.8
@@ -100,7 +101,7 @@ Resources
 		end
 	*earthMana
 		name:Earth Mana
-		desc:This is earth mana. Earth mana is extremely simple, however many of the branches of it can be dangerous!
+		desc:This is earth mana. Earth mana is extremely durable, however is very difficult to get in large quantities!
 	*airMana
 		name:Air Mana
 		desc:This is air mana. Air mana is great to have, however it's hard to keep contained!
@@ -109,6 +110,15 @@ Resources
 				airMana=airMana*0.6
 			end
 		end
+	*Health
+		name:Health
+		desc:This is how much health you have. Be careful, if this reaches 0 you lose.
+		wtart with:100
+		on tick:if(health > maxHealth)health=health+1
+	*maxHealth
+		name:Max Health
+		desc:This is how much health you can have, meaning your health cannot go above this number.
+		start with:100
 Upgrades
 	*balanceAlchemist
 		name:Balance Alchemist
@@ -119,4 +129,4 @@ Upgrades
 			multiply yield of earthMana by 1.4
 			multiply yield of airMana by 1.4
 		end
-		cost:24 fireMana+24 waterMana+24 earthMana+24 airMana
+		cost:24 fireMana,24 waterMana,24 earthMana,24 airMana
