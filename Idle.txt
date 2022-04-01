@@ -16,7 +16,7 @@ Settings
 			if ($rand=2)yield 1 earthMana
 			if ($rand=3)yield 1 airMana
 		end
-	building cost increase:115%
+	building cost increase:100%
 	building cost refund:80%
 	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
 	stylesheet:stuff/bigBlue.css
@@ -44,12 +44,12 @@ Buildings
 		name:Flame
 		desc:A forever burning flame which produces small amounts of mana.
 		on tick:yield 0.01 fireMana
-		cost:2 fireMana
+		cost:2+(Flame*Flame)/4 fireMana
 	*Breeze
 		name:Breeze
 		desc:A small breeze which always blows, producing small amounts of mana.
 		on tick:yield 0.01 airMana
-		cost:2 airMana
+		cost:2+(Breeze*Breeze)/4 airMana
 Resources
 	*Amount
 		name:Amount
