@@ -17,7 +17,7 @@ Settings
 			if ($rand=3)yield 1 airMana
 		end
 	building cost increase:115%
-	building cost refund:50%
+	building cost refund:80%
 	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
 	stylesheet:stuff/bigBlue.css
 Layout
@@ -45,6 +45,11 @@ Buildings
 		desc:A forever burning flame which produces small amounts of mana.
 		on tick:yield 0.01 fireMana
 		cost:2 fireMana
+	*Breeze
+		name:Breeze
+		desc:A small breeze which always blows, producing small amounts of mana.
+		on tick 0.01 airMana
+		cost:2 airMana
 Resources
 	*Amount
 		name:Amount
