@@ -3,7 +3,7 @@ Let's make a game!
 	by:Evena May Xin
 	desc:This is an alchemical clicker/idle game.
 	created:17/12/2020
-	updated:17/12/2020
+	updated:3/31/2022
 	version:0.01
 
 Settings
