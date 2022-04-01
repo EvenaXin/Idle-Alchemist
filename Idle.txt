@@ -124,9 +124,4 @@ Upgrades
 			multiply yield of earthMana by 1.4
 			multiply yield of airMana by 1.4
 		end
-		cost:
-			24 fireMana
-			24 waterMana
-			24 earthMana
-			24 airMana
-		end
+		cost:24 fireMana + 24 waterMana + 24 earthMana + 24 airMana
