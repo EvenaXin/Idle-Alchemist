@@ -71,22 +71,58 @@ Resources
 			lose this
 		end
 		on tick:
-			if (random(fireMana)>random(waterMana/2,waterMana))
-				fireMana=fireMana*0.8
-				waterMana=waterMana*0.8
-				earthMana=earthMana*0.8
-				airMana=airMana*0.8
+			if (random(fireMana) > 12)
+				fireMana = fireMana * 0.8
+				if(fireMana < 12)
+					fireMana = 12
+				end
 			end
 		end
 
 	*waterMana
 		name:Water Mana
 		desc:This is water mana. Water mana can be used to keep fire under control!
+		on click:
+			Flame=this+Flame
+			lose this
+		end
+		on tick:
+			if (random(fireMana) > 12)
+				fireMana = fireMana * 0.8
+				if(fireMana < 12)
+					fireMana = 12
+				end
+			end
+		end
 
 	*earthMana
 		name:Earth Mana
 		desc:This is earth mana. Earth mana is extremely simple, however many of the branches of it can be dangerous!
+		on click:
+			Flame=this+Flame
+			lose this
+		end
+		on tick:
+			if (random(fireMana) > 12)
+				fireMana = fireMana * 0.8
+				if(fireMana < 12)
+					fireMana = 12
+				end
+			end
+		end
 
 	*airMana
 		name:Air Mana
 		desc:This is air mana. Air mana is great to have, however it's hard to keep contained!
+		on click:
+			Flame=this+Flame
+			lose this
+		end
+		on tick:
+			if (random(fireMana) > 12)
+				fireMana = fireMana * 0.8
+				if(fireMana < 12)
+					fireMana = 12
+				end
+			end
+		end
