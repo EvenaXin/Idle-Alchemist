@@ -61,8 +61,7 @@ Resources
 		name:Fire Mana
 		desc:This is fire mana. Fire mana is useful for a large number of things, however have caution as it is extremely volatile in large quantities!
 		on click:
-			Flame=this+Flame
-			lose this
+			if (Amount==-1) this=this-1
 		end
 		on tick:
 			if (random(fireMana)<random(waterMana))
