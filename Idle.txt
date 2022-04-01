@@ -48,7 +48,7 @@ Buildings
 	*Breeze
 		name:Breeze
 		desc:A small breeze which always blows, producing small amounts of mana.
-		on tick 0.01 airMana
+		on tick:yield 0.01 airMana
 		cost:2 airMana
 Resources
 	*Amount
