@@ -73,9 +73,6 @@ Resources
 		on tick:
 			if (random(fireMana) > 12)
 				fireMana = fireMana * 0.8
-				if(fireMana < 12)
-					fireMana = 12
-				end
 			end
 		end
 
@@ -89,9 +86,6 @@ Resources
 		on tick:
 			if (random(fireMana) > 12)
 				fireMana = fireMana * 0.8
-				if(fireMana < 12)
-					fireMana = 12
-				end
 			end
 		end
 
@@ -105,9 +99,6 @@ Resources
 		on tick:
 			if (random(fireMana) > 12)
 				fireMana = fireMana * 0.8
-				if(fireMana < 12)
-					fireMana = 12
-				end
 			end
 		end
 
@@ -121,8 +112,5 @@ Resources
 		on tick:
 			if (random(fireMana) > 12)
 				fireMana = fireMana * 0.8
-				if(fireMana < 12)
-					fireMana = 12
-				end
 			end
 		end
