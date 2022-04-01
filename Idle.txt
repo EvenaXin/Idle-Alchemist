@@ -16,7 +16,7 @@ Settings
 			if ($rand=2)yield 1 earthMana
 			if ($rand=3)yield 1 airMana
 		end
-	building cost increase:100%
+	building cost increase:140%
 	building cost refund:80%
 	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
 	stylesheet:stuff/bigBlue.css
@@ -30,11 +30,21 @@ Buttons
 		no text
 		on click:
 			anim icon wobble
-			$rand=random(3)
+			$rand=random(8)
 			if ($rand=0)yield 1 fireMana
 			if ($rand=1)yield 1 waterMana
 			if ($rand=2)yield 1 earthMana
 			if ($rand=3)yield 1 airMana
+			if ($rand=4)yield 1 fireMana
+			if ($rand=5)yield 1 waterMana
+			if ($rand=6)yield 1 earthMana
+			if ($rand=7)yield 1 airMana
+			if ($rand=8)
+				yield 1 fireMana
+				yield 1 waterMana
+				yield 1 earthMana
+				yield 1 airMana
+			end
 		end
 	*RESOURCES
 		name:RESOURCES
@@ -42,15 +52,24 @@ Buttons
 Buildings
 	*Flame
 		name:Flame
-		desc:A forever burning flame which produces small amounts of mana.
-		on tick:yield 0.01 fireMana
-		on click:cost=2+(Flame*Flame)/4 fireMana
-		cost:2+(Flame*Flame)/4 fireMana
+		desc:A forever burning flame which produces small amounts of fire mana.
+		on tick:yield 0.1 fireMana
+		cost:2 fireMana
+	*Stream
+		name:Stream
+		desc:A gently flowing stream which produces small amounts of water mana.
+		on tick:yield 0.1 waterMana
+		cost:2 waterMana
 	*Breeze
 		name:Breeze
-		desc:A small breeze which always blows, producing small amounts of mana.
-		on tick:yield 0.01 airMana
-		cost:2+(Breeze*Breeze)/4 airMana
+		desc:A jagged cracked stone which produces small amounts of earth mana.
+		on tick:yield 0.1 earthMana
+		cost:2 earthMana
+	*Breeze
+		name:Breeze
+		desc:A small breeze which always blows, producing small amounts of air mana.
+		on tick:yield 0.1 airMana
+		cost:2 airMana
 Resources
 	*Amount
 		name:Amount
