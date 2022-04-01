@@ -8,14 +8,6 @@ Let's make a game!
 
 Settings
 	background:https://new-cdn.80.lv/upload/content/12/5d2872665b532.gif
-		on click:
-			anim icon wobble
-			$rand=random(3)
-			if ($rand=0)yield 1 fireMana
-			if ($rand=1)yield 1 waterMana
-			if ($rand=2)yield 1 earthMana
-			if ($rand=3)yield 1 airMana
-		end
 	building cost increase:140%
 	building cost refund:80%
 	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
@@ -72,16 +64,6 @@ Buildings
 		on tick:yield 0.1 airMana
 		cost:2 airMana
 Resources
-	*Amount
-		name:Amount
-		desc:The amount you wish to use.
-		can be negative
-		on click:
-			if (Amount=1) Amount=1
-			if (Amount=10) Amount=10
-			if (Amount=100) Amount=100
-			if (Amount=-1) Amount=-1
-		end
 	*fireMana
 		name:Fire Mana
 		desc:This is fire mana. Fire mana is great for protecting yourself, however it doesn't respond well to water mana!
