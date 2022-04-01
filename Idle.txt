@@ -37,7 +37,6 @@ Buttons
 			if ($rand=1)yield 1 waterMana
 			if ($rand=2)yield 1 earthMana
 			if ($rand=3)yield 1 airMana
-		end
 
 	*RESOURCES
 		name:RESOURCES
@@ -61,7 +60,6 @@ Resources
 			if ($Amt=10) Amount=10
 			if ($Amt=100) Amount=-1
 			if ($Amt=-1) Amount=1
-		end
 
 	*fireMana
 		name:Fire Mana
@@ -69,10 +67,8 @@ Resources
 		on click:
 			Flame=this+Flame
 			lose this
-		end
 		on tick:
 			fireMana = fireMana * 0.8
-		end
 
 	*waterMana
 		name:Water Mana
@@ -80,10 +76,8 @@ Resources
 		on click:
 			Flame=this+Flame
 			lose this
-		end
 		on tick:
 			fireMana = fireMana * 0.8
-		end
 
 	*earthMana
 		name:Earth Mana
@@ -91,10 +85,8 @@ Resources
 		on click:
 			Flame=this+Flame
 			lose this
-		end
 		on tick:
 			fireMana = fireMana * 0.8
-		end
 
 	*airMana
 		name:Air Mana
@@ -102,7 +94,5 @@ Resources
 		on click:
 			Flame=this+Flame
 			lose this
-		end
 		on tick:
-			fireMana = fireMana * 0.8
-		end
+			airMana = airMana * 0.8
