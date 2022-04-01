@@ -54,8 +54,8 @@ Resources
 			$Amt=Amount
 			if ($Amt=1) Amount=1
 			if ($Amt=10) Amount=10
-			if ($Amt=100) Amount=-1
-			if ($Amt=-1) Amount=1
+			if ($Amt=100) Amount=100
+			if ($Amt=-1) Amount=-1
 		end
 	*fireMana
 		name:Fire Mana
