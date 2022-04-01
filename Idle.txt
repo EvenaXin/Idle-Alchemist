@@ -115,7 +115,9 @@ Resources
 		desc:This is how much health you have. Be careful, if this reaches 0 you lose.
 		start with:100
 		on tick:
-			if(health < maxHealth)health=health+1
+			if(health < maxHealth)
+				health=health+1
+			end
 		end
 	*maxHealth
 		name:Max Health
