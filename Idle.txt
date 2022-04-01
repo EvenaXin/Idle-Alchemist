@@ -115,4 +115,3 @@ Upgrades
 			multiply yield of waterMana by 1.4
 			multiply yield of earthMana by 1.4
 			multiply yield of airMana by 1.4
-		end
