@@ -114,3 +114,19 @@ Resources
 				airMana=airMana*0.6
 			end
 		end
+Upgrades
+	*balanceAlchemist
+		name:Balance Alchemist
+		desc:Little bit of everything
+		passive:
+			multiply yield of fireMana by 1.4
+			multiply yield of waterMana by 1.4
+			multiply yield of earthMana by 1.4
+			multiply yield of airMana by 1.4
+		end
+		cost:
+			24 fireMana
+			24 waterMana
+			24 earthMana
+			24 airMana
+		end
