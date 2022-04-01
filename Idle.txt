@@ -76,10 +76,10 @@ Resources
 		desc:The amount you wish to use.
 		can be negative
 		on click:
-			if (Amount==1) Amount=1
-			if (Amount==10) Amount=10
-			if (Amount==100) Amount=100
-			if (Amount==-1) Amount=-1
+			if (Amount=1) Amount=1
+			if (Amount=10) Amount=10
+			if (Amount=100) Amount=100
+			if (Amount=-1) Amount=-1
 		end
 	*fireMana
 		name:Fire Mana
