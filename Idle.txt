@@ -44,18 +44,17 @@ Buildings
 		name:Flame
 		desc:A forever burning flame which produces small amounts of mana.
 		on tick:yield 0.01 fireMana
-		no buy
+		cost:2 fireMana
 Resources
 	*Amount
 		name:Amount
 		desc:The amount you wish to use.
 		can be negative
 		on click:
-			$Amt=Amount
-			if ($Amt==1) Amount=1
-			if ($Amt==10) Amount=10
-			if ($Amt==100) Amount=100
-			if ($Amt==-1) Amount=-1
+			if (Amount==1) Amount=1
+			if (Amount==10) Amount=10
+			if (Amount==100) Amount=100
+			if (Amount==-1) Amount=-1
 		end
 	*fireMana
 		name:Fire Mana
