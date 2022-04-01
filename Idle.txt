@@ -44,6 +44,7 @@ Buildings
 		name:Flame
 		desc:A forever burning flame which produces small amounts of mana.
 		on tick:yield 0.01 fireMana
+		on click:cost=2+(Flame*Flame)/4 fireMana
 		cost:2+(Flame*Flame)/4 fireMana
 	*Breeze
 		name:Breeze
