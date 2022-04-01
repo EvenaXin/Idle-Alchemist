@@ -84,12 +84,7 @@ Resources
 	*fireMana
 		name:Fire Mana
 		desc:This is fire mana. Fire mana is useful for a large number of things, however have caution as it is extremely volatile in large quantities!
-		on click:
-			if (Amount==-1) 
-				lose this
-			end
-			this=this - Amount
-		end
+		on click:lose this
 		on tick:
 			if (random(fireMana)<random(waterMana))
 				fireMana=fireMana*0.8
@@ -124,4 +119,4 @@ Upgrades
 			multiply yield of earthMana by 1.4
 			multiply yield of airMana by 1.4
 		end
-		cost:24 fireMana
+		cost:24 fireMana+24 waterMana+24 earthMana+24 airMana
