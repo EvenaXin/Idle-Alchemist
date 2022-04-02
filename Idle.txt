@@ -36,7 +36,6 @@ Buttons
 				yield 1 waterMana
 				yield 1 earthMana
 				yield 1 airMana
-			end
 		end
 	*RESOURCES
 		name:RESOURCES
