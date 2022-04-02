@@ -87,7 +87,7 @@ Buildings
 		desc: this is metal. Metal is used for construction of almost all machienery and advanced weaponry. Warning, Metal cannot be turned into fire or earth mana.
 		cost increase:110%
 		cost refund:0%
-		cost:1 Flame,1Stone
+		cost:1 Flame, 1 Stone
 	*Engine
 		name:Engine
 		desc:Generates work based on steam generated per second.
