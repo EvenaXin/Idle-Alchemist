@@ -5,7 +5,6 @@ Let's make a game!
 	created:17/12/2020
 	updated:3/31/2022
 	version:0.01
-
 Settings
 	background:https://new-cdn.80.lv/upload/content/12/5d2872665b532.gif
 	building cost increase:140%
@@ -36,6 +35,7 @@ Buttons
 				yield 1 waterMana
 				yield 1 earthMana
 				yield 1 airMana
+			end
 		end
 	*RESOURCES
 		name:RESOURCES
@@ -82,28 +82,19 @@ Resources
 		end
 	*earthMana
 		name:Earth Mana
+		desc:This is earth mana. Earth mana is extremely durable, however is very difficult to get in large quantities!
 		desc:This is earth mana. Earth mana is extremely durable, however due to it being more tangible, it is more difficult to get in large quantities!
 	*airMana
 		name:Air Mana
 		desc:This is air mana. Air mana is great to have, however it's hard to keep contained!
-		on tick:
-			if (random(12) > 7)
-				airMana=airMana*0.6
-			end
-		end
 	*health
-		name:health
-		desc:This is how much health you have. Be careful, if this reaches 0 you lose.
-		start with:100
-		on tick:
-			if(health < maxHealth)
-				yield 0.2 health
-			end
-		end
+		name:Health
+		desc:This is how much damage you can take, if it hits 0 that's the end for you, but worry not, you will come back with prestige points.
+		start with:60
 	*maxHealth
 		name:Max Health
-		desc:This is how much health you can have, meaning your health cannot go above this number.
-		start with:100
+		desc:This is how much health you can have, if you have more than this at any point it will be set to this.
+		start with:60
 Upgrades
 	*balanceAlchemist
 		name:Balance Alchemist
@@ -114,3 +105,5 @@ Upgrades
 			multiply yield of waterMana by 1.4
 			multiply yield of earthMana by 1.4
 			multiply yield of airMana by 1.4
+		end
+		cost:24 fireMana,24 waterMana,24 earthMana,24 airMana
