@@ -97,7 +97,7 @@ Resources
 	*airManaMax
 		name:Maximum Air Mana
 		desc:This is how much air mana you can hold before falloff starts to happen.
-		starts with:12
+		start with:12
 		hidden
 	*health
 		name:Health
