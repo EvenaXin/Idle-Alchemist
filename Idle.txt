@@ -71,6 +71,11 @@ Buildings
 			lose 0.05 fireMana
 		end
 		cost:4 waterMana, 2 fireMana
+	*Coal
+		name:Coal Mine
+		desc:A coal mine which can be used to improve fire mana output.
+		passive:multiply yield of fireMana by 1.2
+		cost:4 Stone, 60 fireMana
 Resources
 	*fireMana
 		name:Fire Mana
