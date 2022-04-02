@@ -24,10 +24,12 @@ Buttons
 			anim icon wobble
 			$rand=random(8)
 			if ($rand=0)yield 1 fireMana
+				text:this is a test
 			if ($rand=1)yield 1 waterMana
 			if ($rand=2)yield 1 earthMana
 			if ($rand=3)yield 1 airMana
 			if ($rand=4)yield 1 fireMana
+				text:this is a test
 			if ($rand=5)yield 1 waterMana
 			if ($rand=6)yield 1 earthMana
 			if ($rand=7)yield 1 airMana
@@ -82,6 +84,7 @@ Buildings
 		desc:When streams flow into each other they can form a lake. Quite a lot of water mana is found around lakes.
 		passive:multiply yield of waterMana by 1.2
 		cost:2 Stream, 60 waterMana
+	*
 Resources
 	*fireMana
 		name:Fire Mana
