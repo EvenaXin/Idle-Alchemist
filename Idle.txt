@@ -62,6 +62,15 @@ Buildings
 		desc:A small breeze which always blows, producing small amounts of air mana.
 		on tick:yield 0.1 airMana
 		cost:2 airMana
+	*Boiler
+		name:Boiler
+		desc:A large tank which can be used to generate steam from fire and water.
+		on tick:
+			yield 0.1 steamMana
+			lose 0.1 waterMana
+			lose 0.05 fireMana
+		end
+		cost:4 waterMana, 2 fireMana
 Resources
 	*fireMana
 		name:Fire Mana
@@ -99,6 +108,14 @@ Resources
 		desc:This is how much air mana you can hold before falloff starts to happen.
 		start with:12
 		hidden
+	*steamMana
+		name:Steam Mana
+		desc:This is steam mana. Steam mana can be used for producing work. Work can be used for combat and industry.
+		on tick:
+			if (steamMana > steamMana:ps * 12)
+				steamMana = steamMana:ps * 12
+			end
+		end
 	*health
 		name:Health
 		desc:This is how much damage you can take, if it hits 0 that's the end for you, but worry not, you will come back with prestige points.
@@ -108,6 +125,7 @@ Resources
 		desc:This is how much health you can have, if you have more than this at any point it will be set to this.
 		start with:60
 		hidden
+	
 Upgrades
 	*balanceAlchemist
 		name:Balance Alchemist
