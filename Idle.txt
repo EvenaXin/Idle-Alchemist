@@ -138,6 +138,10 @@ Resources
 				steamMana = steamMana:ps * 12
 			end
 		end
+	*work
+		name:Work
+		desc:This is work. Work is needed for any industrial process.
+		on tick:work = work * 0.98
 Upgrades
 	*balanceAlchemist
 		name:Balance Alchemist
