@@ -32,7 +32,7 @@ Buttons
 			if ($rand=6)yield 1 earthMana
 			if ($rand=7)yield 1 airMana
 			if ($rand=8)
-				yield 1 fireMana
+				<t>yield 1 fireMana</t>
 				yield 1 waterMana
 				yield 1 earthMana
 				yield 1 airMana
@@ -82,7 +82,17 @@ Buildings
 		desc:When streams flow into each other they can form a lake. Quite a lot of water mana is found around lakes.
 		passive:multiply yield of waterMana by 1.2
 		cost:2 Stream, 60 waterMana
-	*
+	*metal
+		name:Metal
+		desc: this is metal. Metal is used for construction of almost all machienery and advanced weaponry. Warning, Metal cannot be turned into fire or earth mana.
+		cost increase:110%
+		cost refund:0%
+		cost:1 Flame,1Stone
+	*Engine
+		name:Engine
+		desc:Generates work based on steam generated per second.
+		on tick:yield steamMana work
+		cost:3 steamMana, 1 metal
 Resources
 	*fireMana
 		name:Fire Mana
