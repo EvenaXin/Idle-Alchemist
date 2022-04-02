@@ -104,7 +104,7 @@ Buildings
 				if ($rand = 0) yield 1 Stone
 			end
 		end
-		cost:2 Engine, 4 metal, 4 Coal
+		cost:2 Engine, 4 metal, 2 Coal
 Resources
 	*fireMana
 		name:Fire Mana
