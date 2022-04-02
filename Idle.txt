@@ -137,28 +137,48 @@ Upgrades
 		desc:Prevents you from obtaining fire mana.
 		passive:multiply yield of fireMana by 0
 		cost:30 fireMana
-		on click:lose this
+		on click:
+			if (have this)
+				lose this
+			end
+		end
 	*holdWaterMana
 		name:Hold Water
 		desc:Prevents you from obtaining water mana.
 		passive:multiply yield of waterMana by 0
 		cost:30 waterMana
-		on click:lose this
+		on click:
+			if (have this)
+				lose this
+			end
+		end
 	*holdEarthMana
 		name:Hold Earth
 		desc:Prevents you from obtaining earth mana.
 		passive:multiply yield of earthMana by 0
 		cost:30 earthMana
-		on click:lose this
+		on click:
+			if (have this)
+				lose this
+			end
+		end
 	*holdAirMana
 		name:Hold Air
 		desc:Prevents you from obtaining air mana.
 		passive:multiply yield of fireMana by 0
 		cost:30 airMana
-		on click:lose this
+		on click:
+			if (have this)
+				lose this
+			end
+		end
 	*holdSteamMana
 		name:Hold Steam
 		desc:Prevents you from obtaining steam mana.
 		passive:multiply yield of steamMana by 0
 		cost:30 steamMana
-		on click:lose this
+		on click:
+			if (have this)
+				lose this
+			end
+		end
