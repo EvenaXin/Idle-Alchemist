@@ -94,6 +94,11 @@ Resources
 				airMana=airMana * 0.8
 			end
 		end
+	*airManaMax
+		name:Maximum Air Mana
+		desc:This is how much air mana you can hold before falloff starts to happen.
+		starts with:12
+		hidden
 	*health
 		name:Health
 		desc:This is how much damage you can take, if it hits 0 that's the end for you, but worry not, you will come back with prestige points.
