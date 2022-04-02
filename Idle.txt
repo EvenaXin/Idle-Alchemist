@@ -18,7 +18,7 @@ Buttons
 		name:Gather Mana
 		desc:Begin gathering mana!
 		class:bigButton
-		icon:https://new-cdn.80.lv/upload/content/12/5d2872665b532.gif
+		icon:https://i.gifer.com/fetch/w300-preview/6d/6d11e19c13e7599592a1c22867f886e5.gif
 		no text
 		on click:
 			anim icon wobble
