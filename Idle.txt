@@ -112,7 +112,6 @@ Upgrades
 	*balanceAlchemist
 		name:Balance Alchemist
 		desc:Little bit of everything
-		cost:24 fireMana, 24 waterMana, 24 earthMana, 24 airMana
 		passive:
 			multiply yield of fireMana by 1.4
 			multiply yield of waterMana by 1.4
