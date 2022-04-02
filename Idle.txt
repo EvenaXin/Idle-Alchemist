@@ -75,6 +75,7 @@ Resources
 	*waterMana
 		name:Water Mana
 		desc:This is water mana. Water mana is one of the building blocks of life, however it doesn't respond well to fire mana!
+		on click:lose this
 		on tick:
 			if (random(waterMana)<random(fireMana))
 				waterMana=waterMana * 0.8
@@ -82,11 +83,17 @@ Resources
 		end
 	*earthMana
 		name:Earth Mana
-		desc:This is earth mana. Earth mana is extremely durable, however is very difficult to get in large quantities!
 		desc:This is earth mana. Earth mana is extremely durable, however due to it being more tangible, it is more difficult to get in large quantities!
+		on click:lose this
 	*airMana
 		name:Air Mana
 		desc:This is air mana. Air mana is great to have, however it's hard to keep contained!
+		on click:lose this
+		on tick:
+			if (random(airMana)>airManaMax)
+				airMana=airMana * 0.8
+			end
+		end
 	*health
 		name:Health
 		desc:This is how much damage you can take, if it hits 0 that's the end for you, but worry not, you will come back with prestige points.
