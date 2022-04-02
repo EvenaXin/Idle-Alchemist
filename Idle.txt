@@ -32,7 +32,7 @@ Buttons
 			if ($rand=6)yield 1 earthMana
 			if ($rand=7)yield 1 airMana
 			if ($rand=8)
-				yield 1 fireMana
+				<t>yield 1 fireMana</t>
 				yield 1 waterMana
 				yield 1 earthMana
 				yield 1 airMana
