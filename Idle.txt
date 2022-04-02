@@ -91,7 +91,7 @@ Buildings
 	*Engine
 		name:Engine
 		desc:Generates work based on steam generated per second.
-		on tick:yield steamMana work
+		on tick:yield steamMana:ps work
 		cost:3 steamMana, 1 metal
 Resources
 	*fireMana
