@@ -107,6 +107,7 @@ Resources
 		name:Max Health
 		desc:This is how much health you can have, if you have more than this at any point it will be set to this.
 		start with:60
+		hidden
 Upgrades
 	*balanceAlchemist
 		name:Balance Alchemist
