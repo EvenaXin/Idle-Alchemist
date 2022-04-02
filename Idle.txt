@@ -93,6 +93,17 @@ Buildings
 		desc:Generates work based on steam generated per second.
 		on tick:yield steamMana:ps work
 		cost:3 steamMana, 1 metal
+	*Quarry
+		name:Stone Quarry
+		desc:Uses work to generate earth mana. Also has a small chance of generating a stone.
+		on tick:
+			if (work >= 1)
+				yield 1 earthMana
+				lose 1 work
+				$rand=random(19)
+				if ($rand = 0) yield 1 stone
+			end
+		end
 Resources
 	*fireMana
 		name:Fire Mana
