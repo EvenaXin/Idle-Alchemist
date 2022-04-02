@@ -4,7 +4,7 @@ Let's make a game!
 	desc:This is an alchemical clicker/idle game.
 	created:17/12/2020
 	updated:3/31/2022
-	version:0.01
+	version:0.0.0.01
 Settings
 	background:https://new-cdn.80.lv/upload/content/12/5d2872665b532.gif
 	building cost increase:140%
