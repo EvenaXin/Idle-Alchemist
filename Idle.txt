@@ -121,16 +121,6 @@ Resources
 				steamMana = steamMana:ps * 12
 			end
 		end
-	*health
-		name:Health
-		desc:This is how much damage you can take, if it hits 0 that's the end for you, but worry not, you will come back with prestige points.
-		start with:60
-	*maxHealth
-		name:Max Health
-		desc:This is how much health you can have, if you have more than this at any point it will be set to this.
-		start with:60
-		hidden
-	
 Upgrades
 	*balanceAlchemist
 		name:Balance Alchemist
@@ -142,3 +132,33 @@ Upgrades
 			multiply yield of airMana by 1.4
 		end
 		cost:24 fireMana,24 waterMana,24 earthMana,24 airMana
+	*holdFireMana
+		name:Hold Fire
+		desc:Prevents you from obtaining fire mana.
+		passive:multiply yield of fireMana by 0
+		cost:30 fireMana
+		on click:lose this
+	*holdWaterMana
+		name:Hold Water
+		desc:Prevents you from obtaining water mana.
+		passive:multiply yield of waterMana by 0
+		cost:30 waterMana
+		on click:lose this
+	*holdEarthMana
+		name:Hold Earth
+		desc:Prevents you from obtaining earth mana.
+		passive:multiply yield of earthMana by 0
+		cost:30 earthMana
+		on click:lose this
+	*holdAirMana
+		name:Hold Air
+		desc:Prevents you from obtaining air mana.
+		passive:multiply yield of fireMana by 0
+		cost:30 airMana
+		on click:lose this
+	*holdSteamMana
+		name:Hold Steam
+		desc:Prevents you from obtaining steam mana.
+		passive:multiply yield of steamMana by 0
+		cost:30 steamMana
+		on click:lose this
