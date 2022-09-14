@@ -43,20 +43,20 @@ Buttons
 		desc: SHOW/HIDE your resources.
 		on click:
 			if (hideRes=0)
-				show *fireMana
-				show *waterMana
-				show *earthMana
-				show *airMana
-				show *steamMana
-				show *work
+				show fireMana
+				show waterMana
+				show earthMana
+				show airMana
+				show steamMana
+				show work
 				hideRes=1
 			else
-				hide *fireMana
-				hide *waterMana
-				hide *earthMana
-				hide *airMana
-				hide *steamMana
-				hide *work
+				hide fireMana
+				hide waterMana
+				hide earthMana
+				hide airMana
+				hide steamMana
+				hide work
 				hideRes=0
 			end
 		end
