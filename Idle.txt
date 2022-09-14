@@ -4,7 +4,7 @@ Let's make a game!
 	desc:This is an alchemical clicker/idle game.
 	created:17/12/2020
 	updated:3/31/2022
-	version:0.0.0.02
+	version:0.0.0.03
 Settings
 	background:https://new-cdn.80.lv/upload/content/12/5d2872665b532.gif
 	building cost increase:140%
@@ -23,19 +23,19 @@ Buttons
 		on click:
 			anim icon wobble
 			$rand=random(8)
-			if ($rand=0)yield 1 fireMana
-			if ($rand=1)yield 1 waterMana
-			if ($rand=2)yield 1 earthMana
-			if ($rand=3)yield 1 airMana
-			if ($rand=4)yield 1 fireMana
-			if ($rand=5)yield 1 waterMana
-			if ($rand=6)yield 1 earthMana
-			if ($rand=7)yield 1 airMana
+			if ($rand=0)yield 0.1 fireMana
+			if ($rand=1)yield 0.1 waterMana
+			if ($rand=2)yield 0.1 earthMana
+			if ($rand=3)yield 0.1 airMana
+			if ($rand=4)yield 0.1 fireMana
+			if ($rand=5)yield 0.1 waterMana
+			if ($rand=6)yield 0.1 earthMana
+			if ($rand=7)yield 0.1 airMana
 			if ($rand=8)
-				yield 1 fireMana
-				yield 1 waterMana
-				yield 1 earthMana
-				yield 1 airMana
+				yield 0.1 fireMana
+				yield 0.1 waterMana
+				yield 0.1 earthMana
+				yield 0.1 airMana
 			end
 		end
 	*RESOURCES
