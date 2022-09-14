@@ -179,7 +179,7 @@ Resources
 	*hideRes
 		name:Hide Res
 		desc: Always hidden
-		start with 1
+		start with:1
 		hidden
 Upgrades
 	*balanceAlchemist
