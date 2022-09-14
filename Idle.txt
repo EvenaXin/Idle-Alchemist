@@ -22,20 +22,36 @@ Buttons
 		no text
 		on click:
 			anim icon wobble
-			$rand=random(8)
-			if ($rand=0)yield 0.1 fireMana
-			if ($rand=1)yield 0.1 waterMana
-			if ($rand=2)yield 0.1 earthMana
-			if ($rand=3)yield 0.1 airMana
-			if ($rand=4)yield 0.3 fireMana
-			if ($rand=5)yield 0.3 waterMana
-			if ($rand=6)yield 0.3 earthMana
-			if ($rand=7)yield 0.3 airMana
-			if ($rand=8)
-				yield 0.2 fireMana
-				yield 0.2 waterMana
-				yield 0.2 earthMana
-				yield 0.2 airMana
+			$rand=random(14)
+			if ($rand=0)yield 1 fireMana
+			if ($rand=1)yield 1 waterMana
+			if ($rand=2)yield 1 earthMana
+			if ($rand=3)yield 1 airMana
+			if ($rand=4)yield 1 fireMana
+			if ($rand=5)yield 1 waterMana
+			if ($rand=6)yield 1 earthMana
+			if ($rand=7)yield 1 airMana
+			if ($rand=8)yield 3 fireMana
+			if ($rand=9)yield 3 waterMana
+			if ($rand=10)yield 3 earthMana
+			if ($rand=11)yield 3 airMana
+			if ($rand=12)
+				yield 2 fireMana
+				yield 2 waterMana
+				yield 2 earthMana
+				yield 2 airMana
+			end
+			if ($rand=13)
+				yield 2 fireMana
+				yield 2 waterMana
+				yield 2 earthMana
+				yield 2 airMana
+			end
+			if ($rand=14)
+				yield 5 fireMana
+				yield 5 waterMana
+				yield 5 earthMana
+				yield 5 airMana
 			end
 		end
 	*RESOURCES
