@@ -58,22 +58,12 @@ Buttons
 		name:RESOURCES
 		desc: SHOW/HIDE your resources.
 		on click:
-			if (hideRes=0)
-				show fireMana
-				show waterMana
-				show earthMana
-				show airMana
-				show steamMana
-				show work
-				hideRes=1
+			if (have hideRes)
+				show res
+				lose hideRes
 			else
-				hide fireMana
-				hide waterMana
-				hide earthMana
-				hide airMana
-				hide steamMana
-				hide work
-				hideRes=0
+				hide res
+				gain hideRes
 			end
 		end
 Buildings
@@ -142,6 +132,7 @@ Buildings
 		passive:multiply yield of earthMana by 1.4
 		cost:2 Engine, 4 metal, 2 Coal
 Resources
+	name:res
 	*fireMana
 		name:Fire Mana
 		desc:This is fire mana. Fire mana is great for protecting yourself, however it doesn't respond well to water mana!
@@ -191,12 +182,6 @@ Resources
 		desc:This is work. Work is needed for any industrial process.
 		on tick:work = work * 0.98
 		
-		
-	*hideRes
-		name:Hide Res
-		desc: Always hidden
-		start with:1
-		hidden
 Upgrades
 	*balanceAlchemist
 		name:Balance Alchemist
@@ -219,7 +204,7 @@ Upgrades
 			if (have this)
 				lose this
 			else
-				if (fireMana >= 30)gain this
+				gain this
 			end
 		end
 	*holdWaterMana
@@ -232,14 +217,13 @@ Upgrades
 			if (have this)
 				lose this
 			else
-				if (waterMana >= 30)gain this
+				gain this
 			end
 		end
 	*holdEarthMana
 		name:Hold Earth
 		desc:Prevents you from obtaining earth mana.
 		passive:multiply yield of earthMana by 0
-		cost:30 earthMana
 		no buy
 		on click:
 			if (have this)
@@ -252,7 +236,6 @@ Upgrades
 		name:Hold Air
 		desc:Prevents you from obtaining air mana.
 		passive:multiply yield of fireMana by 0
-		cost:30 airMana
 		no buy
 		on click:
 			if (have this)
@@ -265,7 +248,6 @@ Upgrades
 		name:Hold Steam
 		desc:Prevents you from obtaining steam mana.
 		passive:multiply yield of steamMana by 0
-		cost:30 steamMana
 		no buy
 		on click:
 			if (have this)
@@ -274,3 +256,9 @@ Upgrades
 				if (steamMana >= 30)gain this
 			end
 		end
+		
+	*hideRes
+		name:HideRes
+		desc:no need
+		start with
+		hidden
