@@ -41,15 +41,16 @@ Buttons
 	*RESOURCES
 		name:RESOURCES
 		desc: SHOW/HIDE your resources.
-		on start: $hideRes=false
+		on start: $hideRes=1
 		on click:
-			if ($hideRes)
+			if ($hideRes=0)
 				show *fireMana
 				show *waterMana
 				show *earthMana
 				show *airMana
 				show *steamMana
 				show *work
+				$hideRes=1
 			else
 				hide *fireMana
 				hide *waterMana
@@ -57,6 +58,7 @@ Buttons
 				hide *airMana
 				hide *steamMana
 				hide *work
+				$hideRes=0
 			end
 		end
 Buildings
