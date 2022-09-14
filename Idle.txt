@@ -41,7 +41,7 @@ Buttons
 	*RESOURCES
 		name:RESOURCES
 		desc: SHOW/HIDE your resources.
-		on start $hideRes=false
+		on start: $hideRes=false
 		on click:
 			if ($hideRes)
 				show *fireMana
