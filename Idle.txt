@@ -59,10 +59,20 @@ Buttons
 		desc: SHOW/HIDE your resources.
 		on click:
 			if (have hideRes)
-				show res
+				show fireMana
+				show waterMana
+				show earthMana
+				show airMana
+				show steamMana
+				show work
 				lose hideRes
 			else
-				hide res
+				hide fireMana
+				hide waterMana
+				hide earthMana
+				hide airMana
+				hide steamMana
+				hideWork
 				gain hideRes
 			end
 		end
@@ -132,7 +142,6 @@ Buildings
 		passive:multiply yield of earthMana by 1.4
 		cost:2 Engine, 4 metal, 2 Coal
 Resources
-	name:res
 	*fireMana
 		name:Fire Mana
 		desc:This is fire mana. Fire mana is great for protecting yourself, however it doesn't respond well to water mana!
