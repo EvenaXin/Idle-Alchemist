@@ -59,20 +59,10 @@ Buttons
 		desc: SHOW/HIDE your resources.
 		on click:
 			if (have hideRes)
-				show fireMana
-				show waterMana
-				show earthMana
-				show airMana
-				show steamMana
-				show work
+				show tag:res
 				lose hideRes
 			else
-				hide fireMana
-				hide waterMana
-				hide earthMana
-				hide airMana
-				hide steamMana
-				hideWork
+				hide tag:res
 				gain hideRes
 			end
 		end
@@ -145,6 +135,7 @@ Resources
 	*fireMana
 		name:Fire Mana
 		desc:This is fire mana. Fire mana is great for protecting yourself, however it doesn't respond well to water mana!
+		tags:res,mana
 		on click:lose this
 		on tick:
 			if (random(fireMana)<random(waterMana))
@@ -154,6 +145,7 @@ Resources
 	*waterMana
 		name:Water Mana
 		desc:This is water mana. Water mana is one of the building blocks of life, however it doesn't respond well to fire mana!
+		tags:res,mana
 		on click:lose this
 		on tick:
 			if (random(waterMana)<random(fireMana))
@@ -163,10 +155,12 @@ Resources
 	*earthMana
 		name:Earth Mana
 		desc:This is earth mana. Earth mana is extremely durable, however due to it being more tangible, it is more difficult to get in large quantities!
+		tags:res,mana
 		on click:lose this
 	*airMana
 		name:Air Mana
 		desc:This is air mana. Air mana is great to have, however it's hard to keep contained!
+		tags:res,mana
 		on click:lose this
 		on tick:
 			if (random(airMana)>airManaMax)
@@ -181,6 +175,7 @@ Resources
 	*steamMana
 		name:Steam Mana
 		desc:This is steam mana. Steam mana can be used for producing work. Work can be used for combat and industry.
+		tags:res,mana
 		on tick:
 			if (steamMana > steamMana:ps * 12)
 				steamMana = steamMana:ps * 12
@@ -189,6 +184,7 @@ Resources
 	*work
 		name:Work
 		desc:This is work. Work is needed for any industrial process.
+		tags:res
 		on tick:work = work * 0.98
 		
 Upgrades
