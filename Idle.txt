@@ -149,7 +149,7 @@ Resources
 		on click:lose this
 		on tick:
 			if (random(waterMana)<random(fireMana))
-				waterMana=waterMana * 0.8
+				lose (fireMana/waterMana) waterMana
 			end
 		end
 	*earthMana
@@ -201,10 +201,6 @@ Upgrades
 	*manaContainer
 		name:Temporary Name
 		desc: Decrease loss of fire and water mana
-		passive:
-			multiply loss of fireMana by 0.6
-			multiply loss of waterMana by 0.6
-		end
 		cost:5 Flame,5 Stream
 Upgrades
 	name:Holds
