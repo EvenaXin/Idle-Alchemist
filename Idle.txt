@@ -204,6 +204,8 @@ Upgrades
 		passive:
 			multiply loss of fireMana by 0.6
 			multiply loss of waterMana by 0.6
+		end
+		cost:5 Flame,5 Stream
 Upgrades
 	name:Holds
 	*holdFireMana
