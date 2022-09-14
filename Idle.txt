@@ -41,16 +41,15 @@ Buttons
 	*RESOURCES
 		name:RESOURCES
 		desc: SHOW/HIDE your resources.
-		$hideRes=1
 		on click:
-			if ($hideRes=0)
+			if (hideRes=0)
 				show *fireMana
 				show *waterMana
 				show *earthMana
 				show *airMana
 				show *steamMana
 				show *work
-				$hideRes=1
+				hideRes=1
 			else
 				hide *fireMana
 				hide *waterMana
@@ -58,7 +57,7 @@ Buttons
 				hide *airMana
 				hide *steamMana
 				hide *work
-				$hideRes=0
+				hideRes=0
 			end
 		end
 Buildings
@@ -175,6 +174,13 @@ Resources
 		name:Work
 		desc:This is work. Work is needed for any industrial process.
 		on tick:work = work * 0.98
+		
+		
+	*hideRes
+		name:Hide Res
+		desc: Always hidden
+		start with 1
+		hidden
 Upgrades
 	*balanceAlchemist
 		name:Balance Alchemist
