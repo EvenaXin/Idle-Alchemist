@@ -27,20 +27,38 @@ Buttons
 			if ($rand=1)yield 0.1 waterMana
 			if ($rand=2)yield 0.1 earthMana
 			if ($rand=3)yield 0.1 airMana
-			if ($rand=4)yield 0.1 fireMana
-			if ($rand=5)yield 0.1 waterMana
-			if ($rand=6)yield 0.1 earthMana
-			if ($rand=7)yield 0.1 airMana
+			if ($rand=4)yield 0.3 fireMana
+			if ($rand=5)yield 0.3 waterMana
+			if ($rand=6)yield 0.3 earthMana
+			if ($rand=7)yield 0.3 airMana
 			if ($rand=8)
-				yield 0.1 fireMana
-				yield 0.1 waterMana
-				yield 0.1 earthMana
-				yield 0.1 airMana
+				yield 0.2 fireMana
+				yield 0.2 waterMana
+				yield 0.2 earthMana
+				yield 0.2 airMana
 			end
 		end
 	*RESOURCES
 		name:RESOURCES
 		desc: SHOW/HIDE your resources.
+		on start $hideRes=false
+		on click:
+			if hideRes
+				show *fireMana
+				show *waterMana
+				show *earthMana
+				show *airMana
+				show *steamMana
+				show *work
+			else
+				hide *fireMana
+				hide *waterMana
+				hide *earthMana
+				hide *airMana
+				hide *steamMana
+				hide *work
+			end
+		end
 Buildings
 	*Flame
 		name:Flame
