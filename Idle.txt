@@ -266,4 +266,3 @@ Upgrades
 		name:HideRes
 		desc:no need
 		start with
-		hidden
