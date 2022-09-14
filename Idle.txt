@@ -43,7 +43,7 @@ Buttons
 		desc: SHOW/HIDE your resources.
 		on start $hideRes=false
 		on click:
-			if hideRes
+			if ($hideRes)
 				show *fireMana
 				show *waterMana
 				show *earthMana
