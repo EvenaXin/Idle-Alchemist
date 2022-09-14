@@ -198,6 +198,12 @@ Upgrades
 			multiply yield of airMana by 1.4
 		end
 		cost:24 fireMana,24 waterMana,24 earthMana,24 airMana
+	*manaContainer
+		name:Temporary Name
+		desc: Decrease loss of fire and water mana
+		passive:
+			multiply loss of fireMana by 0.6
+			multiply loss of waterMana by 0.6
 Upgrades
 	name:Holds
 	*holdFireMana
