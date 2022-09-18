@@ -125,7 +125,7 @@ Buildings
 			if (work >= 1)
 				yield 1 earthMana
 				lose 1 work
-				if (chance(1%) and chance(1%)) yield 1 Stone
+				if (chance(4%) and chance(1%)) yield 1 Stone
 			end
 		end
 		passive:multiply yield of earthMana by 1.4
