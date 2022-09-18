@@ -125,8 +125,9 @@ Buildings
 			if (work >= 1)
 				yield 1 earthMana
 				lose 1 work
-				$rand=random(99999)
-				if ($rand = 0) yield 1 Stone
+				if chance(0.01%)
+        				yield 1 Stone
+    				end
 			end
 		end
 		passive:multiply yield of earthMana by 1.4
